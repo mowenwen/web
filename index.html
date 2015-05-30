@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>飞机票查询，机票预订，机票价格查询，打折特价机票【携程旅行】</title>
+    <meta name="description" content="携程旅行机票官网提供飞机票查询、机票预订和特价机票查询、打折机票查询服务。携程旅行实时提供航班查询、航班时刻表查询、国内外机场实时起降查询，特别提供东方航空、南方航空、中国国航、深圳航空、厦门航空、海南航空、四川航空、春秋航空官方网站特价机票查询，是您手机上网订机票的首选。" />
+    <meta name="keywords" content="机票,机票预订,机票查询,飞机票,飞机票查询,特价机票,打折机票,订机票,网上订机票,手机订机票,手机查机票,特价机票查询,飞机票价查询" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no,minimal-ui" />
+ 
+    <!-- UC强制全屏 -->
+    <meta name="full-screen" content="yes">
+    <!-- QQ强制全屏 -->
+    <meta name="x5-fullscreen" content="true">
+    <!-- UC应用模式 -->
+    <meta name="browsermode" content="application">
+    <!-- QQ应用模式 -->
+    <meta name="x5-page-mode" content="app">
+
+
+    <link rel="Stylesheet" href="http://webresource.c-ctrip.com/styles/h5/common/main.css" />
+    <link rel="Stylesheet" href="../fpage/dest/res/style/fbase.css?t=201503091000" />
+    <link rel="Stylesheet" href="../fpage/dest/res/style/flight.css?t=201503091000" />
+    <link rel="Stylesheet" href="../fpage/dest/res/style/flights_logo.css?t=201503091000" />
+    
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta content="telephone=no" name="format-detection" />
+    <meta name="apple-mobile-web-app-title" content="携程旅行" />
+    <link rel="apple-touch-startup-image" href="http://res.m.ctrip.com/html5/content/images/640.png?v=1.0" sizes="320x460">
+    <link rel="apple-touch-startup-image" href="http://res.m.ctrip.com/html5/content/images/940.png?v=1.0" sizes="640x920">
+    <link rel="apple-touch-startup-image" href="http://res.m.ctrip.com/html5/content/images/1004.png?v=1.0" sizes="768x1004">
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="http://res.m.ctrip.com/html5/Content/images/57.png?v=1.0?v=1.0" />
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://res.m.ctrip.com/html5/Content/images/72.png?v=1.0?v=1.0" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://res.m.ctrip.com/html5/Content/images/114.png?v=1.0?v=1.0" />
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://res.m.ctrip.com/html5/Content/images/144.png?v=1.0?v=1.0" />
+    <style type="text/css">
+        .wxcsheader, .wxcsfooter {
+            display: none;
+        }
+
+        .__header__ {
+        }
+
+        .__container__ {
+        }
+
+        .tepheader {
+            position: fixed;
+            top: 60px;
+            width: 100%;
+            border-bottom: 1px solid #f1f1f1;
+        }
+    </style>
+
+    
+    <script type="text/javascript" src="/html5/ClientData/LoadServerDate"></script>
+</head>
+<body onselectstart="return false">
+    <div class="wxcsheader"></div>
+    <div id="main">
+        <div class="main-frame">
+            <div class="main-viewport">
+                <div class="sub-viewport" id="index_viewport" page-id="212003" page-url="" style="display: none;">
+
+                    <style type="text/css">
+                        .flightroot #free_dl {
+                            display: none;
+                            position: fixed;
+                            top: 0;
+                            left: 0;
+                            z-index: 9999;
+                            -webkit-box-align: center;
+                            width: 90%;
+                            overflow: hidden;
+                            padding-right: 10%;
+                            background: #e4f2fc;
+                            background: -webkit-linear-gradient(#ecf7ff 0,#e9f5fe 20%,#e4f2fc 60%,#deeffa 85%,#dbedf9 100%);
+                            background: -webkit-gradient(top,#ecf7ff 0,#e9f5fe 20%,#e4f2fc 60%,#deeffa 85%,#dbedf9 100%);
+                            background: -moz-linear-gradient(top,#ecf7ff 0,#e9f5fe 20%,#e4f2fc 60%,#deeffa 85%,#dbedf9 100%);
+                        }
+
+                            .flightroot #free_dl img {
+                                height: 80%;
+                                float: left;
+                            }
+
+                            .flightroot #free_dl em {
+                                height: 10%;
+                                float: left;
+                                width: 100%;
+                            }
+
+                            .flightroot #free_dl a {
+                                height: 100%;
+                                float: left;
+                                vertical-align: middle;
+                                display: block;
+                            }
+
+                        .flightroot #free_close {
+                            z-index: 2;
+                            width: 40px;
+                            height: 100%;
+                            position: absolute;
+                            right: 0;
+                            top: 0;
+                            background: url("http://res.m.ctrip.com/html5/Content/images/free_download_close.png") center center no-repeat;
+                            background-size: 20px 20px;
+                        }
+                    </style>
+                    <div class="flightroot">
+                        <div id="free_dl"><span id="free_close"></span><a href="/market/download.aspx?from=H5flight" data-ios-app="" data-android-app="" class="__appaddress__"><em></em><img src="http://res.m.ctrip.com/html5/content/images/free_download.png?v=2.1"></a></div>
+                        <header>
+                            <h1>机票查询</h1><i id="js_return" class="returnico"></i>
+                        </header>
+                     
+                        <aside class="cont_wrap">
+                            <ul class="city_tab">
+                                <li data-type="1" class="cityTabCrt">单程</li>
+                                <li data-type="2" class="">往返</li>
+                            </ul>
+                        </aside>
+                        <section id="panel-box" class="pb85">
+                            <ul class=" flight-srhform">
+                                <li class="flight-switch">
+                                    <dl>
+                                        <dd class="flight-departcity" id="js_departcity_w"><span id="js_departcity">--</span></dd>
+                                        <dt class="flight-cityswitch" id="js_exchange_btn">
+                                            切换<i class="icon-switch"><i class="s1"></i><i class="s2"></i><i class="s3"></i></i>
+                                        </dt>
+                                        <dd class="flight-backcity" id="js_backcity_w"><span id="js_backcity">--</span></dd>
+                                    </dl>
+                                </li>
+
+                                <li class="city_tit_box">
+                                    <dl class="startdate city_tit city_padding_left">
+                                        <dd id="js_departDate" class="flight-date">
+                                            <em>-- --</em>
+                                            <b>-- --</b>
+                                        </dd>
+                                    </dl>
+                                    <dl class="backdate city_tit city_padding_right">
+                                        <dd id="js_backDate" class="flight-date">
+                                            <em>-- --</em>
+                                            <b>-- --</b>
+                                        </dd>
+                                    </dl>
+                                </li>
+                                <li class="passenger js_hide">
+                                    <dl>
+                                        <dd class="flight-pstype">
+                                            <b class="passengerType">成人</b>
+                                            <div class="tips"></div>
+                                        </dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <button id="searchlistsubmit" class="flight-btnsrh" value="">查&nbsp;询</button>
+                                </li>
+                            </ul>
+
+                            <div class="blk30"></div>
+
+                            <div class="flight-img-svc">
+                                <img src="http://pic.c-ctrip.com/h5/flight/fwcn.png?v=1" width="100%">
+                            </div>
+                        </section>
+                        <div>
+                            <div class="flight-zjfooter-blank"></div>
+                            <div class="flight-footer">
+                                <ul>
+                                    <li id="flightSearch" class="ft1 current">机票查询</li>
+                                    <li id="flightHelper" class="ft2">低价助手</li>
+                                    <li id="flightSchedule" class="ft3">航班动态</li>
+                                    <li id="checkin" class="ft4">值机</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main-state"></div>
+        </div>
+    </div>
+    <div class="wxcsfooter"></div>
+    <div id="footer"></div>
+    <input type="hidden" id="page_id" value="wait" />
+    <input type='hidden' id="bf_ubt_orderid" value="" />
+
+    <script>
+        var vhash = window.location.hash.replace(/\?*\&*\w+=1/, '');
+        function $dom(id) {
+            return document.querySelector(id);
+        }
+
+  
+        //判断如果hash为index，则显示fake页，此处逻辑不能去掉
+        if ((!vhash || vhash === '#index' || vhash==='#') && $dom('#index_viewport')) {
+
+            $dom('#index_viewport').style.display = 'block';
+
+            //如果store存在
+            var searchObj = JSON.parse(localStorage.getItem('S_FLIGHT_AirTicket')) || '';
+
+            //获取今天是星期几
+            var weekName = ['周日', '周一', '周二', '周三', '周四', '周五', '周六'];
+            var searchValue = searchObj ? searchObj.value : '';
+            var dDate = new Date(searchValue ? searchValue._items[0]['date'] : new Date(new Date().getTime() + (24 * 60 * 60 * 1000)));
+            var aDate;
+
+            //如果store里的日期小于当前的日期
+            if(new Date(dDate) < new Date()) {
+                dDate =  new Date(new Date().getTime() + (24 * 60 * 60 * 1000));
+                //国际默认去程+3，国内去程加2
+                if((searchValue && searchValue.dmode == 2) || (searchValue && searchValue.amode == 2)) {
+                    aDate =  new Date(new Date().getTime() + (24 * 60 * 60 * 4000));
+                } else {
+                    aDate =  new Date(new Date().getTime() + (24 * 60 * 60 * 3000));
+                }
+            }
+
+            //补零
+            function addZero(i) {
+                return i < 10 ? '0' + i : i;
+            }
+            //获取今天的周信息
+            function getWeek(date) {
+
+                var offDay = parseInt((date.setHours(0, 0, 0, 0) - new Date().setHours(0, 0, 0, 0)) / (24 * 60 * 60 * 1000));
+                console.log('ddd', date, '---', date.getTime(), '---', (new Date()), '---', (new Date().getTime()), '---', offDay);
+                switch (offDay) {
+                    case 0:
+                        return '今天';
+                    case 1:
+                        return '明天';
+                    case 2:
+                        return '后天';
+                    default:
+                        return weekName[date.getDay()];
+                }
+            }
+
+            $dom('#js_departcity').innerHTML = '<em>' + (searchValue ? searchValue._items[0]['dcityName'] : '北京') + '</em>'
+            $dom('#js_backcity').innerHTML = '<em>' + (searchValue ? searchValue._items[0]['acityName'] : '上海') + '</em>'
+            $dom('#js_departDate').innerHTML = '<em>' + addZero(dDate.getMonth() + 1) + '月' + addZero(dDate.getDate()) + '日</em>' + '\r<b>' + getWeek(dDate) + '</b>';
+
+            //处理返程刷新情况
+            if (searchValue && searchValue.tripType == 2) {
+                var apart = ((searchValue && searchValue.dmode == 2) || (searchValue && searchValue.amode == 2)) ? 3 : 2;
+                aDate = aDate || new Date(searchValue ? searchValue._items[1]['date'] : new Date(new Date().getTime() + (24 * 60 * 60 * 1000 * apart)));
+                var $ul_tal = document.getElementsByClassName('city_tab');
+                var $ul_tal_child = $ul_tal[0]
+                try {
+                    $ul_tal_child.children[0].className = '';
+                    $ul_tal_child.children[1].className = 'cityTabCrt';
+
+                    $dom('#panel-box').className = 'backtrack';
+                    $dom('#js_backDate').innerHTML = '<em>' + addZero(aDate.getMonth() + 1) + '月' + addZero(aDate.getDate()) + '日</em>' + '\r<b>' + getWeek(aDate) + '</b>';
+                } catch (e) {
+
+                }
+
+            }
+
+            //处理是否勾选国际
+            if ((searchValue && searchValue.dmode == 2) || (searchValue && searchValue.amode == 2)) {
+                var $passenger = document.getElementsByClassName('passenger');
+                $passenger[0].className = 'passenger';
+                //判断是成人还是儿童,若为儿童
+                if (searchValue && searchValue.passengerType == 2) {
+                    var $passengerType = document.getElementsByClassName('passengerType');
+                    var $tips = document.getElementsByClassName('tips');
+
+                    $passengerType[0].innerHTML = '儿童';
+                    $tips[0].innerHTML = '无成人陪伴的儿童<br>请直接向航空公司预订';
+                }
+            }
+
+        }
+    </script>
+
+    <script src="http://webresource.c-ctrip.com/code/lizard/1.1/web/3rdlibs/require.min.js"></script>
+    <script type="text/javascript" src="http://webresource.c-ctrip.com/code/lizard/1.1/web/3rdlibs/include.libs.js"></script>
+    <script type="text/javascript" src="http://webresource.c-ctrip.com/code/lizard/1.1/web/common.js"></script>
+    <script type="text/javascript" src="load.js?v=201503181600"></script>
+
+    <script>
+       
+        //hybrid模式下引入bridge.js
+        window.localStorage.removeItem('isInApp');
+        window.localStorage.removeItem('ISINAPP');
+        var ua = navigator.userAgent || '';
+        if (ua) {
+            if (/ctrip/i.test(ua)) {
+                window.localStorage.setItem('isInApp', 1);
+                document.write('<script src="//webresource.c-ctrip.com/code/lizard/2.0/web/3rdlibs/bridge.js" type="text/javascript"></' + 'script>');
+            }
+        }
+
+    </script>
+
+    <script type="text/javascript">
+        // 添加到桌面图标 by xuld
+        (function () {
+            //前端控制往返特惠标志的显示
+            //if (new Date('2014/12/1') < new Date() < new Date('2015/12/1')) {
+            //    $("li[data-type='2']").append('<i class="sales">特惠</i>')
+            //}
+
+            // 从桌面进来会存在 #do_not_show_add_to_home_tip
+            if (/do_not_show_add_to_home_tip/.test(location.href)) {
+                return;
+            }
+
+            var arrowStyle;
+
+            // 排除一些浏览器。
+            var ua = navigator.userAgent;
+
+            var isAndriodUC = /UCBrowser/.test(ua) && /And(roid|\b)/.test(ua);
+            var iphoneSafari = /Safari/.test(ua) && /iPhone/.test(ua) && !/QQBrowser/.test(ua) && !/UCBrowser/.test(ua);
+            var ipadSafari = /Safari/.test(ua) && /iPad/.test(ua) && !/QQBrowser/.test(ua) && !/UCBrowser/.test(ua);
+
+            if (isAndriodUC) {
+                arrowStyle = 'andriod-uc';
+            } else if (iphoneSafari) {
+                arrowStyle = 'iphone-safari';
+            } else if (ipadSafari) {
+                arrowStyle = 'ipad-safari';
+            } else {
+                return;
+            }
+
+            // 在当前网址添加 #do_not_show_add_to_home_tip
+            location.hash += '&do_not_show_add_to_home_tip=1';
+
+            // 当天不重新显示。
+            var d = +today();
+            if (+localStorage.do_not_show_add_to_home_tip === d) {
+                return;
+            }
+            localStorage.do_not_show_add_to_home_tip = d;
+            document.write('<div id="add_to_home_tip" class="flight-shortcut flight-shortcut-' + arrowStyle + '" onclick="$(this).hide()" style="z-index:9999999">\
+                            <i class="flight-shortcut-close">close</i>\
+                            <i class="flight-shortcut-logo">ctrip-logo</i>\
+                            <p class="flight-shortcut-txt">' + (
+                isAndriodUC ?
+                    '先点击<i class="flight-shortcut-iconandriod"><em></em><em></em><em></em></i>再收藏<br>网址 收藏为"手机桌面"' :
+                    '先点击<i class="flight-shortcut-iconios"><em></em></i><br>再“添加到主屏幕”'
+            ) + '\
+                            </p>\
+                        </div>');
+
+            if (ipadSafari) {
+                // https://github.com/cubiq/add-to-homescreen/blob/master/style/addtohomescreen.css
+                if (navigator.userAgent.indexOf('OS 6') >= 0) {
+                    $('#add_to_home_tip').css('left', '115px');
+                } else if (navigator.userAgent.indexOf('OS 7') >= 0) {
+                    $('#add_to_home_tip').css('left', '50px');
+                } else {
+                    $('#add_to_home_tip').css('left', 'auto').css('right', '0.4em');
+                }
+            }
+
+            // 页面跳转后不重新显示。
+            var time = 1;
+            window.addEventListener('hashchange', function () {
+                if (time++ === 2) {
+                    $('.flight-shortcut').hide();
+                }
+            }, false);
+
+            function today() {
+                var date = new Date();
+                return new Date(date.getFullYear(), date.getMonth(), date.getDate());
+            }
+
+        })();
+    </script>
+
+
+
+
+
+    <!-- insert ga -->
+    <script type="text/javascript" src="//webresource.c-ctrip.com/code/lizard/1.1/web/3rdlibs/include.ga.js"></script>
+    <!-- insert ubt -->
+    <script type="text/javascript" src="//webresource.c-ctrip.com/code/lizard/1.1/web/3rdlibs/include.ubt.js"></script>
+
+</body>
+</html>
+<script type="text/statistics" id="J_FPLUS_STATISTIC">{"From": "HtmlMemCache", "Total": 0}</script>
